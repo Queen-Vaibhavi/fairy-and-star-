@@ -36,7 +36,7 @@ function setup() {
 	starBody = Bodies.circle(650 , 30 , 5 , {restitution:0.5, isStatic:true});
 	World.add(world, starBody);
 	
-	star_options = {
+	starBody_options = {
 restitution: 1
   }
 	
