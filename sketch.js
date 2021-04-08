@@ -60,13 +60,16 @@ fairy.velocityX = 5;
 	
   if(keyDown("down")){
 	star.velocityY = 5;
+	  Matter.Body.setStatic(starBody,false);
 	  }
+	
 	//Hi Vaibhavi, Set the x and y position of the sprite "star" same as the x and y position of the starBody by writing the below code
         star.x = starBody.position.x; 
 	star.y = starBody.position.y;
 
 	  if(star.position.y > 485){
-    star.velocityY = 0;
+         star.velocityY = 0;
+          Matter.Body.setStatic(starBody,true);
 	  }
 
 }
